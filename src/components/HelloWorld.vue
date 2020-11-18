@@ -101,9 +101,9 @@ export default {
     };
   },
   mounted() {
-    axios.get("http://localhost:5000/users").then((response) => {
-      console.log(response);
-      this.data = response.data;
+    axios.get("http://localhost:5000/api/users").then((res) => {
+      console.log(res);
+      this.data = res.data;
     });
   },
 };
